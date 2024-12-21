@@ -101,7 +101,6 @@ public class OutboundReactiveRateLimiter {
     - The class is designed to regulate outgoing request rates to conform to a defined TPS limit.
 2. Parameters:
     - ```dataObject```: Represents the payload or context for the operation, allowing flexibility to handle diverse use cases.
-    - ```chargeType```: Indicates the type of request, useful for logging or categorization.
     - ```requestCount```: Tracks how many requests have been made in the current second, ensuring TPS compliance.
     - ```lastResetTime```: Monitors the last time the rate counter was reset to establish rate-limiting windows.
     - ```maxTps```: The upper limit of allowed transactions per second.
